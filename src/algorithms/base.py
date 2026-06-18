@@ -1,20 +1,19 @@
 from abc import ABC, abstractmethod
-from typing import Any
 
 
 class Solver(ABC):
     @abstractmethod
-    def solve(self, graph: Any, start_idx: int = 0) -> Any:
-        """
-        Cari rute optimal
+    def solve(self, graph, start_idx: int = 0) -> dict:
+        """Cari rute optimal dari start_idx kembali ke start_idx.
 
         Input:
-            graph: representasi graf dari problem
-            start_idx: indeks node awal (default: 0)
+            graph       -> objek Graph (graph.py)
+            start_idx   -> int, index node awal (default: 0 = hub)
 
         Output:
-            dict dengan key:
-                'path': list indeks node yang membentuk rute optimal
-                'distance_km': total jarak dalam kilometer dari rute optimal
-                'time_ms': total waktu dalam milidetik dari rute optimal
+            dict {
+                "path": list[int],       # urutan node yang dikunjungi
+                "distance_km": float,    # total jarak rute (km)
+                "time_ms": float         # diisi 0, diukur otomatis
+            }
         """
