@@ -1,0 +1,43 @@
+{
+  "hub": {
+    "id": 0,
+    "name": "Gudang Pusat",
+    "lat": -6.9175,
+    "lng": 107.6191
+  },
+  "customers": [
+    {
+      "id": 1,
+      "name": "Pelanggan A",
+      "lat": -6.9212,
+      "lng": 107.6034,
+      "package_weight_kg": 3.5
+    },
+    {
+      "id": 2,
+      "name": "Pelanggan B",
+      "lat": -6.9097,
+      "lng": 107.6382,
+      "package_weight_kg": 5.0
+    },
+    {
+      "id": 3,
+      "name": "Pelanggan C",
+      "lat": -6.925,
+      "lng": 107.625,
+      "package_weight_kg": 2.0
+    }
+  ],
+  "distance_matrix": [
+    [0.0, 2.1, 2.5, 1.8],
+    [2.1, 0.0, 3.0, 2.2],
+    [2.5, 3.0, 0.0, 2.7],
+    [1.8, 2.2, 2.7, 0.0]
+  ],
+  "params": {
+    "fuel_price_per_liter": 5000,
+    "compute_cost_per_ms": 50,
+    "consumption_full_load": 0.05,
+    "consumption_empty": 0.02
+  }
+}
