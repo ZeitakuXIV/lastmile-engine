@@ -31,7 +31,7 @@ Tidak ada dependensi pihak ketiga — seluruh algoritma ditulis *from scratch*.
 
 ## Dataset
 
-Tiga dataset lokasi real (dataset utama memenuhi syarat minimal 12 pelanggan):
+Tiga dataset (dataset utama memenuhi syarat minimal 12 pelanggan):
 
 | Dataset | Wilayah | Radius | Jumlah Titik |
 |---------|---------|--------|--------------|
@@ -117,38 +117,13 @@ Menjamin rute terpendek absolut menggunakan Dynamic Programming dengan *bitmaski
 
 ## Analisis Break-Even
 
-### Cara Hitung
-
-```
-Break-Even = ─────────────────────────────────
-             Penghematan BBM (liter)
-```
-
-### Perhitungan per Dataset
+Cara hitung: Break-Even = Extra Server Cost / Penghematan BBM (liter)
 
 | Dataset | Extra Server | Hemat BBM | Break-Even |
 |---------|:-----------:|:---------:|:----------:|
-| Bandung n=13 | Rp8.850 | 0,12 L | **Rp71.000/L** |
-| Jakarta n=13 | Rp11.800 | 0,30 L | **Rp39.000/L** |
-| Bandung n=6 | Rp13 | 0,05 L | **Rp260/L** ✅ |
-
-### Visualisasi
-
-```
-Biaya (Rp)  
-    ^
-    |                  ● Exact (n=13)
-    |                 /
-    |                /
-    |               ● Greedy (n=13)
-    |
-    |      ● Exact (n=6)
-    |     /
-    |    ● Greedy (n=6)
-    +-------------------------> Harga BBM
-          Rp260  Rp71.000
-          ↑ BEP n=6    ↑ BEP n=13
-```
+| Bandung n=13 | Rp8.850 | 0,12 L | Rp71.000/L |
+| Jakarta n=13 | Rp11.800 | 0,30 L | Rp39.000/L |
+| Bandung n=6 | Rp13 | 0,05 L | Rp260/L |
 
 ## Kesimpulan Bisnis
 
