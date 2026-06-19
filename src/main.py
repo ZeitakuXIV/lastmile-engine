@@ -110,6 +110,9 @@ def main():
     args = parse_args()
     graph = Graph(args.data)
 
+    if "test-n6" in args.data:
+        print("\n  ⚠️  Dataset test-n6.json (5 pelanggan) — digunakan untuk analisis break-even, bukan untuk memenuhi constraint 12 pelanggan.")
+
     for key, info in SCENARIOS.items():
         if args.scenario == "all" or args.scenario == key:
             run_scenario(

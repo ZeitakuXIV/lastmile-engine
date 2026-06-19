@@ -41,6 +41,8 @@ Tiga dataset (dataset utama memenuhi syarat minimal 12 pelanggan):
 
 Matriks jarak merepresentasikan jarak jalan (km) antar titik. Berat paket bervariasi 1–6 kg.
 
+> Dataset `test-n6.json` bersifat opsional — hanya digunakan untuk analisis komparatif break-even, bukan untuk memenuhi syarat 12 pelanggan. Dataset utama (`locations.json` dan `locations-wide.json`) tetap memiliki 12 pelanggan sesuai constraint.
+
 ## Pemilihan Algoritma
 
 ### Algoritma A — Greedy Nearest Neighbor (Heuristik)
